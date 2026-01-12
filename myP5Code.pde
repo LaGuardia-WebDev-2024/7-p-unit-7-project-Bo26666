@@ -10,7 +10,17 @@ void setup() {
 draw = function(){
  
   background(255,255,255,0);
-  
+  fill(
+110, 71, 10
+)
+ellipse(75,300,75,75); //Dog
+ellipse(85,265,25,50);//Ear
+
+fill(
+235, 128, 52
+)
+ellipse(150,300,50,50);//Cat
+triangle(145, 259, 146, 290, 162, 279);//Ear
 
 
 
