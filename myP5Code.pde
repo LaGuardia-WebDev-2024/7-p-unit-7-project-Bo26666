@@ -4,7 +4,7 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+Var dog = 75;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -13,23 +13,38 @@ draw = function(){
   fill(
 110, 71, 10
 )
-ellipse(75,300,75,75); //Dog
-ellipse(85,265,25,50);//Ear
+ellipse(dog,300,75,75); //Dog
+
+rotate(-.3)
+ellipse(dog-80,270,25,50);//Ear
+rotate(.3)
+ellipse(dog-40,315,50,25)
+fill(0,0,0)
+ellipse(dog+24,290,10,10)
+
+
 
 fill(
 235, 128, 52
 )
-ellipse(150,300,50,50);//Cat
-triangle(145, 259, 146, 290, 162, 279);//Ear
+ellipse(160,300,50,50);//Cat
+triangle(155, 259, 156, 290, 172, 279);//Ear
+quad(137,290,130,285,115,270,120,300);
+fill(0,0,0)
+ellipse(174,290,10,10);
 
 
 
+
+
+dog=dog+1;
 
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
 
 }
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
