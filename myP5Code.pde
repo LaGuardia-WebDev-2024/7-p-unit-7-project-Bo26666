@@ -6,7 +6,7 @@ void setup() {
 //🎯Variable Declarations Go Here
 Var dog = 75;
 Var cat = 160;
-Var dude = -30;
+var dude = 30;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -24,33 +24,31 @@ fill(0,0,0)
 ellipse(dog+24,290,10,10)
 
 
-Remeber:dude was 24 but now is-30
-
-
 fill(
 235, 128, 52
-)
+);
 ellipse(cat,300,50,50);//Cat
 triangle(cat-5, 259, cat-4, 290, cat+4, 279);//Ear
 quad(cat-23,290,cat-30,285,cat-45,270,cat-40,300);
 fill(0,0,0)
 ellipse(cat+14,290,10,10);
 
-fill(0,0,0)
-ellipse(dude,245,30,30);
+fill(0,0,0);
+ellipse(dude,245,30,30);//dude
 strokeWeight(8);
-line(dude+56,260,dude+2,300)
-line(dude+56,305,dude+26,320)
-line(dude+80,320,dude+26,340)
-line(dude+2,305,dude-7,330)
-line(dude-7,330,dude-23,315)
-line(dude+5,270,dude+36,265)
+line(dude,260,dude-5,300 )
+line(dude-5,300,dude+18,320)
+line(dude+18,320,dude+18,350)
+line(dude-5,300,dude-23,340)
+line(dude-1,276,dude+27,271)
+
 strokeWeight(2);
 dog=dog+1;
 cat=cat+2;
-dude=dude+1;
+dude=dude+0.5;
 
-if(dog>700){dog=75; cat=160}
+
+if(dog>700){dog=75; cat=160; dude=30}
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
